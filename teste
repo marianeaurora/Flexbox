@@ -1,0 +1,7 @@
+const lista = [];
+
+if (lista){
+    const first_element= lista[0];
+    const first_id= first_element.id;
+    console.log('The'+ first_id + '!');
+}
