@@ -22,11 +22,7 @@ O ``display: flex`` veio com o intuito de facilitar nossa vida nesses aspectos d
 
 O display flex pode ser um pouco mais complicado de usar tendo em vista que existem diversas propriedades que vem junto da especificação flexible box, todavia tudo isso foi feito para justamente melhorar nosso código.
 
-<<<<<<< HEAD
 ## Qual o valor da propriedade ``justify-content`` para essas distribuições de espaço
-=======
-## Qual o valor da propriedade *justify-content* para essas distribuições de espaço
->>>>>>> 1ef713b163cc080b33c713047ae4f209cf10fc71
 
 Podemos distribuir os elementos dentro do pai de diversas formas, podemos por exemplo:
 
@@ -38,8 +34,4 @@ Colocar todo espaço à esquerda e à direita, jogando o conteúdo para o meio c
 
 Colocar todo espaço entre os elementos como vimos antes usando ``justify-content: space-between``.
 
-<<<<<<< HEAD
 E uma possibilidade bem interessante também é colocar o espaço em volta dos elementos. Podemos usar o ``justify-content: space-around`` para isso.
-=======
-E uma possibilidade bem interessante também é colocar o espaço em volta dos elementos. Podemos usar o *justify-content: space-around* para isso.
->>>>>>> 1ef713b163cc080b33c713047ae4f209cf10fc71
