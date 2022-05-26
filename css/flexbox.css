@@ -2,14 +2,17 @@
 .cabecalhoPrincipal .container{
     display:flex;
     align-items: center;
-    justify-content: space-between;   
+    justify-content: space-between; 
     
 }
 
-.cabecalhoPrincipal-nav a{
-    display:inline-block;
-
+.cabecalhoPrincipal-nav {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
 }
+
 /*-----Main-----*/
 .conteudoPrincipal-cursos{
     display:flex;
@@ -27,7 +30,30 @@
     margin-left: 0;
 }
 
+/*-----Video------*/
+.videoSobre{
+    margin-bottom: -20px;
+}
+
+.videoSobre .container {
+    display: flex;
+}
+.videoSobre-sobre{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-grow: 2;
+}
+.videoSobre-video{
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+.videoSobre-sobre-list{
+    flex-grow: 1;
+}
+
 /*------Footer------*/
+
 .rodapePrincipal-patrocinadores .container{
     display:flex;
     justify-content: space-between;
@@ -47,6 +73,7 @@
     display:flex;
 }
 /*------Mapa de Cursos------*/
+
 .rodapePrincipal-navMap-list{
     display: flex;
 	/*flex-direction: column;
@@ -57,16 +84,57 @@
 }
 
 /*------Mobile------*/
-.cabecalhoPrincipal-nav a{
-    display:flex;
-    flex-direction: column;
-    text-align: center;
+@media(max-width: 768px){
+    .cabecalhoPrincipal-nav {
+        flex-direction:column;
+    }
+
+    .cabecalhoPrincipal .container{
+        flex-direction:column;
+        align-items: initial;
+        text-align: center;
+    }
+    
+
+    .conteudoPrincipal-cursos{
+        flex-direction: column;
+    }
+
+    .conteudoPrincipal-cursos-link{
+        width:100%;
+
+    }
+    .videoSobre .container {
+        flex-direction: column;
+    }
+    .videoSobre-video {
+        margin: 0 auto;
+    }
+    
+    .rodapePrincipal-navMap-list{
+        height: auto;
+    }
+
+    .rodapePrincipal-patrocinadores .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodapePrincipal-patrocinadores-list{
+        margin:0;
+        width: 100%;
+    }
+    .rodapePrincipal-contatoForm{
+        width:100%;
+
+    }
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
+
+    .cabecalhoPrincipal-nav-link-app {
+        
+        order: -1;
+    }
 
 }
-
-.cabecalhoPrincipal .container {
-    flex-direction: column;
-    align-items:initial;
-}
-
-
